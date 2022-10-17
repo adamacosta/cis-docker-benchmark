@@ -27,9 +27,9 @@ APP_ARMOR_PROFILE = input('app_armor_profile')
 SELINUX_PROFILE = input('selinux_profile')
 
 # check if docker exists
-only_if('docker not found') do
-  command('docker').exist?
-end
+#only_if('docker not found') do
+#  command('docker').exist?
+#end
 
 control 'docker-5.1' do
   impact 1.0
