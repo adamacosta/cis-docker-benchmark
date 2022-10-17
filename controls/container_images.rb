@@ -25,9 +25,9 @@ title 'Container Images and Build File'
 CONTAINER_USER = input('container_user')
 
 # check if docker exists
-only_if('docker not found') do
-  command('docker').exist?
-end
+#only_if('docker not found') do
+#  command('docker').exist?
+#end
 
 control 'docker-4.1' do
   impact 1.0
